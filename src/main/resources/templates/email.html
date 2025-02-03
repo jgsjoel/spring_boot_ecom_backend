@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+</head>
+<body style="font-family: Arial, sans-serif; padding: 20px; background-color: #f4f4f4;">
+
+    <h1 th:text="'Hello, '+${name}" style="font-size: 24px; font-weight: bold; color: #000;"></h1><br>
+
+    <p style="font-weight: 600; margin-top: 20px;">Thanks for registering an account with DoughDelight!.
+        For activating your Account please click the "Activate" Button at the bottom,
+        and Login to your account</p>
+
+    <div style="display: flex; justify-content: center; align-items: center; margin-top: 15px;">
+        <a th:href="${tokenizedUrl}" style="background-color: #22c55e; color: white; text-align: center; border-radius: 12px; padding: 10px 20px; text-decoration: none; font-size: 16px; font-weight: bold; display: block; width: 25%;">Activate</a>
+    </div>
+
+</body>
+</html>
